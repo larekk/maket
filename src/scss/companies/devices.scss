@@ -1,0 +1,14 @@
+.devices{
+  .companyList__item{
+      height: 160px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  .companyList__title{
+    margin-left: 16px;
+  }
+  .companyList__circleLink{
+    margin-bottom: 16px;
+    align-self: flex-end;
+  }
+}

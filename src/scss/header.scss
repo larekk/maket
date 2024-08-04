@@ -1,0 +1,39 @@
+
+.header{
+  background-color: white;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &__menu{
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+      margin: 0 24px;
+    }
+
+    @media (min-width: 1120px) and (max-width: 1439px) {
+      margin: 0 auto;
+      max-width: 1065px;
+    }
+  }
+
+  &__info{
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons{
+    display: flex;
+  }
+
+}
+
+
+
+

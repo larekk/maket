@@ -1,0 +1,188 @@
+
+.main {
+  @media (min-width: 1120px) {
+    margin-top: 42px;
+  }
+
+  &__header{
+    height: 40px;
+    margin-bottom: 24px;
+    display: none;
+    @media (min-width: 1440px) {
+      width: 1060px;
+      margin: 0 auto 24px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__info{
+    @media (min-width: 1120px) {
+      width: 1060px;
+      margin: 0 auto;
+    }
+  }
+
+  &__titles {
+    font-family: "TT Lakes Bold";
+    font-size: 28px;
+    line-height: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons {
+    font-family: "TT Lakes Regular";
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 769px) and (max-width: 1119px) {
+        display: none;
+    }
+  }
+
+  &__buttons .button {
+    margin-right: 32px;
+    margin-left: 8px;
+    @media (max-width: 768px) {
+      margin-left: 25px;
+    }
+  }
+
+  &__buttons .button:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 28px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -19px;
+      top: -2px;
+      width: 3px;
+      height: 40px;
+      border-right: 3px solid $Turquoise;
+      -webkit-border-bottom-right-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+
+      @media (min-width: 769px) and (max-width: 1119px) {
+        left:-27px;
+      }
+
+      @media (min-width: 1120px) {
+        left: -33px;
+      }
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+      margin-left: 24px;
+    }
+  }
+
+  &__company{
+    @media (min-width: 769px) and (max-width: 1119px) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    width:100%;
+    letter-spacing: .2px;
+    margin-bottom: 16px;
+    margin-top: 0;
+
+    @media (max-width: 768px) {
+      margin: 0 16px 16px 16px;
+    }
+
+  }
+
+  &__textSecond{
+    margin-bottom: 16px;
+
+    @media (min-width: 1120px) {
+      display:none;
+    }
+
+    @media (max-width: 768px) {
+      width:100%;
+      margin: 0 16px 16px 16px;
+    }
+  }
+
+  &__next {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    background-color: $white;
+    margin-left: 16px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-bottom: 2px solid $Turquoise;
+      border-right: 2px solid $Turquoise;
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      top: 7px;
+      left: -15px;
+    }
+
+    &:after {
+      top: 13px;
+      left: -15px;
+    }
+  }
+
+  &__additional{
+    @media (min-width: 769px) and (max-width: 1119px) {
+      width: 50%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+      width: 100%;
+      border-radius: 5px;
+      padding-right: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 532px;
+      height: 307px;
+      border-radius: 5px;
+      margin-left: 36px;
+    }
+
+  }
+}

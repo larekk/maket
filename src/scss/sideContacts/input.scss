@@ -1,0 +1,16 @@
+.input{
+  padding: 12px;
+  border: 1px solid gray;
+  width: 100%;
+  margin:0 16px 16px 0;
+  border-radius: 5px;
+    &__text{
+      height: 120px;
+      resize: none;
+  }
+
+  &--hidden{
+    display: none;
+  }
+}
+

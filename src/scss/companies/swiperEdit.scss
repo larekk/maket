@@ -1,0 +1,16 @@
+.swiper{
+  &-pagination{
+    bottom: 0 !important;
+  }
+
+  &-pagination-bullet{
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #DDDDDD !important;
+  }
+
+  &-pagination-bullet-active {
+    background-color: #B5B6BC !important;
+  }
+}
+

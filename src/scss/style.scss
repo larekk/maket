@@ -1,17 +1,55 @@
-$bgColor: #24292e;
-$text: #fff;
+@import "variables";
+@import "header";
+@import "buttons";
+@import "main";
+@import "menu";
+@import "info";
+@import "company";
+@import "wrapper";
+@import "companies/companyList";
+@import "companies/swiperEdit";
+@import "companies/Title";
+@import "companies/devices";
+@import "companies/prices";
+@import "companies/footer";
+@import "sideMenu/dropMenu";
+@import "sideMenu/navigation";
+@import "sideContacts/modalContact";
+@import "sideContacts/form";
+@import "sideContacts/input";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-style: normal;
   font-weight: normal;
-  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+  background-color: $white;
+}
+
+.none{
+  display: none;
 }

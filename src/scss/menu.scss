@@ -1,0 +1,61 @@
+
+.menu{
+
+  margin-top: 24px;
+
+  @media (min-width: 1120px) {
+    width: 1070px;
+    margin: 0 auto;
+  }
+
+  &__list{
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+    overflow-y: hidden;
+    overflow-x: auto;
+    margin-left: 24px;
+    margin-bottom: 24px;
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      overflow-x: hidden;
+      flex-wrap: wrap;
+      margin-left: 0;
+      margin-bottom: 16px;
+    }
+
+  }
+
+  &__item{
+    white-space: nowrap;
+    padding: 9px 19px;
+    color:$gray;
+    background-color: $white;
+    font-size: 16px;
+    box-sizing: border-box;
+    @media (min-width: 1120px) {
+      white-space: none;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item{
+    &:hover{
+      border: 2px solid $skyblue;
+      border-radius: 6px;
+      background-color: $ff;
+    }
+  }
+
+  &__item--active {
+    border: 2px solid $skyblue;
+    border-radius: 6px;
+    background-color: $ff;
+    box-sizing: border-box;
+  }
+}
+

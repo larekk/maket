@@ -1,0 +1,37 @@
+.footer{
+  font-family: "TT Lakes Medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+
+  &__content{
+    @media (min-width: 768px) and (max-width: 1119px) {
+      display: flex;
+      justify-content: space-between;
+      width: 720px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1120px) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1065px;
+    }
+  }
+
+  &__text{
+    text-align: center;
+    margin-bottom: 16px;
+    @media (min-width: 769px) {
+      width: 33%;
+      &:first-child{
+        text-align: left;
+      }
+
+      &:last-child{
+        text-align: right;
+      }
+    }
+  }
+}

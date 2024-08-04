@@ -1,0 +1,140 @@
+.prices {
+  .companyList {
+    @media (min-width: 767px) {
+      display: none
+    }
+  }
+
+  &__table {
+    width: 100%;
+    margin: 31px auto 0 auto;
+    border-spacing: 0;
+
+    @media (max-width: 767px) {
+      display: none
+    }
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 1120px) {
+      max-width: 1065px;
+    }
+
+    thead {
+      tr {
+        th {
+          font-family: "TT Lakes Regular";
+          font-size: 14px;
+          color: $gray;
+          text-align: left;
+          padding-left: 16px;
+          padding-bottom: 16px;
+        }
+      }
+    }
+
+    tbody {
+      border-radius: 10px;
+
+      tr {
+        height: 64px;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 688px;
+          height: 1px;
+          border-bottom: 1px solid $gray-white;
+          top: 64px;
+          left: 15px;
+          @media (min-width: 1120px) {
+            width: 1008px;
+            left: 25px;
+          }
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+
+        td {
+          font-family: "TT Lakes Regular";
+          font-size: 14px;
+          background-color: $ff;
+          padding: 16px;
+        }
+      }
+    }
+  }
+
+  .companyList__item {
+    height: 200px;
+    width: 260px;
+    display: block;
+    font-family: "TT Lakes Regular";
+    background-color: $ff;
+  }
+
+  .companyList__wrapper {
+    max-width: 260px;
+  }
+
+  &__itemTitle {
+    font-size: 14px;
+    color: $gray;
+    padding: 0;
+    margin: 16px 0 4px 16px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 0 16px;
+    padding: 0;
+  }
+
+  &__itemWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    margin-top: 2px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid $ff;
+    border-right: 2px solid $ff;
+    transform-origin: center;
+    transform: rotate(45deg);
+  }
+
+  &__info {
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 20px;
+    margin: 44px 0 40px 16px;
+    max-width: 80%;
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+      margin: 24px auto 50px auto;
+      max-width: 720px;
+    }
+
+    @media (min-width: 1120px) {
+      margin: 32px auto 50px auto;
+      max-width: 1065px;
+    }
+  }
+
+  &__additional {
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      width: 441px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.company{
+  font-family: "TT Lakes Regular";
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: 769px) and (max-width: 1119px) {
+    width: 50%;
+  }
+  &__text{
+    margin-bottom: 16px;
+    display: none;
+    @media (min-width: 1120px) {
+      display: block;
+    }
+  }
+}

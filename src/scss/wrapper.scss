@@ -1,0 +1,7 @@
+.wrapper{
+  &__item{
+    @media (min-width: 1440px) {
+      margin-left: 340px;
+    }
+  }
+}

@@ -1,0 +1,249 @@
+.button{
+  border: none;
+  background: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+    &:hover{
+      transform: scale(1.1);
+      background-color: $Turquoise;
+      transition: all .2s;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__repair{
+    background: url("../img/repair.svg") no-repeat center center $pink;
+    position: relative;
+    &:before{
+        content: '';
+        width: 2px;
+        height: 32px;
+        position: absolute;
+        border-right: 2px solid $gray-white;
+        top: 4px;
+        right: 61px;
+
+        @media (min-width: 1440px) {
+          display: none;
+        }
+    }
+  }
+
+
+
+  &__search{
+    background: url("../img/search.svg") no-repeat center center $pink;
+  }
+
+  &__searchGlass{
+    background: url("../img/search--2.svg") no-repeat center center $pink;
+  }
+
+  .header &__tel{
+    background: url("../img/tel.svg") no-repeat center center $pink;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dropMenu &__tel{
+    background: url("../img/tel.svg") no-repeat center center $pink;
+
+    &:hover{
+      transform: scale(1.1);
+      background-color: $Turquoise;
+      transition: all .2s;
+    }
+
+  }
+
+  .header &__chat{
+    background: url("../img/chat.svg") no-repeat center center $pink;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dropMenu &__chat{
+    background: url("../img/chat.svg") no-repeat center center $pink;
+
+    &:hover{
+      transform: scale(1.1);
+      background-color: $Turquoise;
+      transition: all .2s;
+    }
+
+  }
+
+  .header &__profile{
+    background: url("../img/profile.svg") no-repeat center center $pink;
+    margin-right: 42px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dropMenu &__profile{
+    background: url("../img/profile.svg") no-repeat center center $pink;
+
+    &:hover{
+      transform: scale(1.1);
+      background-color: $Turquoise;
+      transition: all .2s;
+    }
+
+  }
+
+  .header &__burgerOpen{
+    background: url("../img/burger__open.svg") no-repeat center center $pink;
+    position: relative;
+    margin-right: 42px;
+    @media (max-width: 768px) {
+      margin-right: 16px;
+    }
+
+    &:after{
+      content: '';
+      width: 2px;
+      height: 32px;
+      position: absolute;
+      border-right: 2px solid $gray-white;
+      top: 4px;
+      left: 57px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__burgerClose{
+    background: url("../img/burger--close.svg") no-repeat center center $pink;
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__show,
+  &__close{
+    font-family:"TT Lakes Medium";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    position: relative;
+    border: none;
+    background: none;
+    font-weight: 500;
+    margin-left: 28px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-bottom: 2px solid $Turquoise;
+      border-right: 2px solid $Turquoise;
+    }
+
+    &:before{
+      top: 10px;
+      left: -25px;
+    }
+
+    &:after {
+      top: 4px;
+      left: -25px;
+    }
+  }
+
+  &__show {
+    &:before,
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__close{
+    &:before,
+    &:after{
+      transform: rotate(225deg);
+    }
+  }
+
+  &__order{
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 16px 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 120px;
+    height: 32px;
+    border-radius: 50px;
+    background-color: $pink;
+    margin-right: 16px;
+    color: white;
+
+    &:hover{
+      color: $pink;
+      transition: all 0.3s;
+      background-color: white;
+      outline: 1px solid $pink;
+
+      .prices__arrow{
+        border-color: $pink;
+        transform:rotate(405deg);
+        transition: all 0.3s;
+      }
+
+    }
+  }
+
+  &__special {
+    font-family: 'TT Lakes Bold';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+    .prices__arrow{
+      display: inline-block;
+      margin-left: 15px;
+      border-color: $pink;
+    }
+
+    &:hover{
+      color: $pink;
+      transition: all 0.3s;
+    }
+  }
+
+  &__submit{
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color:$ff;
+    background-color: $pink;
+    border-radius: 50px;
+    width: 136px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px 0 15px;
+    margin-bottom: 16px;
+  }
+}
+
