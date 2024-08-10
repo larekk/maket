@@ -1,16 +1,13 @@
 
 .main {
-  @media (min-width: 1120px) {
-    margin-top: 42px;
-  }
-
   &__header{
     height: 40px;
     margin-bottom: 24px;
-    display: none;
+    margin-top: 24px;
+
     @media (min-width: 1440px) {
       width: 1060px;
-      margin: 0 auto 24px auto;
+      margin: 24px auto 24px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -18,7 +15,7 @@
   }
 
   &__info{
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       width: 1060px;
       margin: 0 auto;
     }
@@ -43,7 +40,7 @@
     @media (max-width: 768px) {
         display: none;
     }
-    @media (min-width: 769px) and (max-width: 1119px) {
+    @media (min-width: 769px) and (max-width: 1440px) {
         display: none;
     }
   }
@@ -75,11 +72,11 @@
       -webkit-border-bottom-right-radius: 3px;
       -webkit-border-top-right-radius: 3px;
 
-      @media (min-width: 769px) and (max-width: 1119px) {
+      @media (min-width: 769px) and (max-width: 1440px) {
         left:-27px;
       }
 
-      @media (min-width: 1120px) {
+      @media (min-width: 1440px) {
         left: -33px;
       }
     }
@@ -88,7 +85,7 @@
         margin-left: 16px;
     }
 
-    @media (min-width: 769px) and (max-width: 1119px) {
+    @media (min-width: 769px) and (max-width: 1440px) {
       margin-left: 24px;
     }
   }
@@ -171,7 +168,7 @@
   &__img {
     width: 100%;
 
-    @media (min-width: 769px) and (max-width: 1119px) {
+    @media (min-width: 769px) and (max-width: 1120px) {
       width: 100%;
       border-radius: 5px;
       padding-right: 24px;

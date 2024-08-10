@@ -1,70 +1,46 @@
+const listItems = document.querySelectorAll('.companyList__wrapper');
 const service = document.querySelector('.service');
-const listItemsService = service.querySelectorAll('.companyList__wrapper');
+const listService = service.querySelector('.companyList__list');
 const listShowButtonService = service.querySelector('.button__show');
 const listCloseButtonService = service.querySelector('.button__close');
 const device = document.querySelector('.devices');
-const listItemsDevice = device.querySelectorAll('.companyList__wrapper');
+const listDevice = device.querySelector('.companyList__list');
 const listShowButtonDevice = device.querySelector('.button__show');
 const listCloseButtonDevice = device.querySelector('.button__close');
 
 listShowButtonService.addEventListener('click', (e) => {
-	for(let i = 0; i < listItemsService.length; i++) {
-		listItemsService[i].classList.remove('none');
-		listShowButtonService.classList.add('none');
-		listCloseButtonService.classList.remove('none');
-	}
+    listService.classList.add('companyList__list--full');
+    listShowButtonService.classList.add('none');
+    listCloseButtonService.classList.remove('none');
+})
+
+listCloseButtonService.addEventListener('click', (e) => {
+    listService.classList.remove('companyList__list--full');
+    listShowButtonService.classList.remove('none');
+    listCloseButtonService.classList.add('none');
 })
 
 listShowButtonDevice.addEventListener('click', (e) => {
-  for(let i = 0; i < listItemsService.length; i++) {
-    listItemsDevice[i].classList.remove('none');
-    listShowButtonDevice.classList.add('none');
-    listCloseButtonDevice.classList.remove('none');
-  }
+  listDevice.classList.add('companyList__list--full');
+  listShowButtonDevice.classList.add('none');
+  listCloseButtonDevice.classList.remove('none');
 })
+
+listCloseButtonDevice.addEventListener('click', (e) => {
+  listDevice.classList.remove('companyList__list--full');
+  listShowButtonDevice.classList.remove('none');
+  listCloseButtonDevice.classList.add('none');
+})
+
+
 
 
 const mediaQueryPl = window.matchMedia('(min-width: 768px) and (max-width: 1119px)')
 
 function plScreenMedia(e) {
   if (e.matches) {
-    for(let i = 0; i < listItemsService.length; i++) {
-      listItemsService[i].classList.remove('swiper-slide');
-    }
-
-    for(let i = 0; i < listItemsDevice.length; i++) {
-      listItemsDevice[i].classList.remove('swiper-slide');
-    }
-
-    for(let i = 0; i < listItemsService.length; i++) {
-      listItemsService[i].classList.remove('none');
-    }
-
-    for(let i = 0; i < listItemsDevice.length; i++) {
-      listItemsDevice[i].classList.remove('none');
-    }
-
-    for(let i = 6; i < listItemsService.length; i++) {
-      listItemsService[i].classList.add('none');
-    }
-
-    for(let i = 3; i < listItemsDevice.length; i++) {
-      listItemsDevice[i].classList.add('none');
-    }
-
-    listCloseButtonService.addEventListener('click', (e) => {
-      for(let i = 6; i < listItemsService.length; i++) {
-        listItemsService[i].classList.add('none');
-        listShowButtonService.classList.remove('none');
-        listCloseButtonService.classList.add('none');
-      }
-    })
-    listCloseButtonDevice.addEventListener('click', (e) => {
-      for(let i = 3; i < listItemsDevice.length; i++) {
-        listItemsDevice[i].classList.add('none');
-        listShowButtonDevice.classList.remove('none');
-        listCloseButtonDevice.classList.add('none');
-      }
+    listItems.forEach(item => {
+      item.classList.remove('swiper-slide');
     })
     listShowButtonService.classList.remove('none');
     listShowButtonDevice.classList.remove('none');
@@ -79,38 +55,10 @@ const mediaQueryComp = window.matchMedia('(min-width: 1120px)')
 
   function computerScreenMedia(e) {
     if (e.matches) {
-
-      for(let i = 0; i < listItemsService.length; i++) {
-        listItemsService[i].classList.remove('none');
-      }
-
-      for(let i = 0; i < listItemsDevice.length; i++) {
-        listItemsDevice[i].classList.remove('none');
-      }
-
-    for(let i = 8; i < listItemsService.length; i++) {
-      listItemsService[i].classList.add('none');
-    }
-
-      for(let i = 4; i < listItemsDevice.length; i++) {
-        listItemsDevice[i].classList.add('none');
-      }
-
-      listCloseButtonService.addEventListener('click', (e) => {
-        for(let i = 8; i < listItemsService.length; i++) {
-          listItemsService[i].classList.add('none');
-          listShowButtonService.classList.remove('none');
-          listCloseButtonService.classList.add('none');
-        }
+      listItems.forEach(item => {
+        item.classList.remove('swiper-slide');
       })
 
-      listCloseButtonDevice.addEventListener('click', (e) => {
-        for(let i = 4; i < listItemsDevice.length; i++) {
-          listItemsDevice[i].classList.add('none');
-          listShowButtonDevice.classList.remove('none');
-          listCloseButtonDevice.classList.add('none');
-        }
-      })
       listShowButtonService.classList.remove('none');
       listShowButtonDevice.classList.remove('none');
   }}

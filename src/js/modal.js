@@ -13,10 +13,6 @@ const inputName = modalContact.querySelector(".input__name");
 const inputMail = modalContact.querySelector(".input__mail");
 const inputText = modalContact.querySelector(".input__text");
 
-
-
-
-
 burgerOpen.addEventListener('click', e => {
   dropMenu.classList.remove('dropMenu--hidden');
   dropMenuModal.classList.add('dropMenu__modal--active');
@@ -50,6 +46,7 @@ buttonTel.addEventListener('click', e => {
 burgerModalContactCloses.forEach(cont => {
   cont.addEventListener('click', e => {
     modalContact.classList.add('modalContact--hidden');
+    dropMenu.classList.remove('dropMenu--hidden');
     inputName.classList.remove('input--hidden');
     inputMail.classList.remove('input--hidden');
     inputText.classList.remove('input--hidden');
@@ -58,14 +55,13 @@ burgerModalContactCloses.forEach(cont => {
 
 modalContactModal.addEventListener('click', e => {
   modalContact.classList.add('modalContact--hidden');
+  dropMenu.classList.remove('dropMenu--hidden');
   inputName.classList.remove('input--hidden');
   inputMail.classList.remove('input--hidden');
   inputText.classList.remove('input--hidden');
 })
 
-
-
-const dropMenuMedia = window.matchMedia('(max-width: 1439px)')
+const dropMenuMedia = window.matchMedia('(max-width: 1440px)')
 
 function dropMenuMediaHandler(e) {
   if (e.matches) {
@@ -78,3 +74,4 @@ function dropMenuMediaHandler(e) {
 
 dropMenuMedia.addEventListener('change', dropMenuMediaHandler)
 dropMenuMediaHandler(dropMenuMedia);
+

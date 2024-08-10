@@ -5,6 +5,13 @@
     }
   }
 
+  &__wrapper{
+    @media (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
   &__table {
     width: 100%;
     margin: 31px auto 0 auto;
@@ -14,11 +21,7 @@
       display: none
     }
 
-    @media (min-width: 768px) and (max-width: 1119px) {
-      max-width: 720px;
-    }
-
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       max-width: 1065px;
     }
 
@@ -120,12 +123,12 @@
     margin: 44px 0 40px 16px;
     max-width: 80%;
 
-    @media (min-width: 768px) and (max-width: 1119px) {
-      margin: 24px auto 50px auto;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 24px;
       max-width: 720px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       margin: 32px auto 50px auto;
       max-width: 1065px;
     }

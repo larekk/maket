@@ -1,6 +1,9 @@
 .title{
-  width: 100%;
   background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+
+  @media(min-width: 1440px) {
+    max-width:1090px;
+  }
 
   &__title{
     font-family: "TT Lakes Regular";
@@ -10,20 +13,17 @@
     text-transform: uppercase;
     padding: 16px;
     color: $gray;
-    margin: 0 auto;
+    margin-left: 24px;
 
-    @media(min-width: 769px) and (max-width: 1119px) {
+    @media(min-width: 769px) and (max-width: 1439px) {
       padding: 16px 0;
       margin-top: 32px;
-      max-width: 720px;
       width: 100%;
     }
 
-    @media(min-width: 1120px) {
+    @media(min-width: 1440px) {
       padding: 16px 0;
       margin-top: 50px;
-      max-width: 1065px;
-      width: 100%;
     }
   }
 }

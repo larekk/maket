@@ -13,14 +13,10 @@
     align-items: center;
     margin: 0 16px;
 
-    @media (min-width: 769px) and (max-width: 1119px) {
+    @media (min-width: 769px) and (max-width: 1439px) {
       margin: 0 24px;
     }
 
-    @media (min-width: 1120px) and (max-width: 1439px) {
-      margin: 0 auto;
-      max-width: 1065px;
-    }
   }
 
   &__info{
@@ -28,8 +24,14 @@
     align-items: center;
   }
 
-  &__buttons{
+  &__buttons {
     display: flex;
+    & button{
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
   }
 
 }

@@ -6,7 +6,7 @@
         margin-bottom: 24px;
     }
 
-    @media (min-width: 769px) and (max-width: 1119px) {
+    @media (min-width: 769px) and (max-width: 1439px) {
       margin: 0 auto 32px auto;
       display: flex;
       width: 100%;
@@ -14,7 +14,7 @@
       padding: 0 24px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1440px) {
       margin: 0 auto 51px auto;
       display: flex;
       width: 1060px;
@@ -25,6 +25,10 @@
 
   &__services{
     margin-bottom: 16px;
+
+    button{
+      margin-right: 16px;
+    }
 
     &:last-child{
       margin-right: 0;

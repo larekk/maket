@@ -1,29 +1,42 @@
-
 .companyList{
-  margin-left: 16px;
-  margin-top: 16px;
+  &__main{
+    margin-left: 16px;
+    margin-top: 16px;
 
-  @media(min-width: 769px) and (max-width: 1119px) {
-    max-width: 720px;
-    margin: 24px auto 0 auto ;
-  }
+    @media(min-width: 769px) and (max-width: 1119px) {
+      margin: 24px auto;
+    }
 
-  @media(min-width: 1120px) {
-    max-width: 1065px;
-    margin: 24px auto 0 auto ;
+    @media(min-width: 1440px) {
+      max-width: 1065px;
+      margin: 24px auto 0 auto ;
+    }
   }
 
   &__list{
-    @media(min-width: 769px) and (max-width: 1119px) {
-      width: 720px;
+    margin: 0 auto 32px auto;
+
+    @media(min-width: 769px) and (max-width: 1439px) {
+      width: 100%;
+      overflow: hidden;
+      height: 160px;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 16px 24px;
     }
 
-    @media(min-width: 1120px) {
+    @media(min-width: 1440px) {
+      height: 160px;
+      overflow: hidden;
       width: 1065px;
       display: flex;
       flex-wrap: wrap;
+      gap: 16px 32px;
+    }
+
+    &--full{
+      height: 100%;
     }
   }
 
@@ -85,23 +98,11 @@
 
   &__wrapper{
     max-width: 240px;
-    margin-bottom: 32px;
 
     @media(min-width: 769px) and (max-width: 1119px) {
       max-width: 224px;
-      margin: 0 24px 16px 0;
-      &:nth-child(3n){
-        margin-right: 0;
-      }
     }
 
-    @media(min-width: 1120px) {
-      max-width: 240px;
-      margin: 0 32px 16px 0 ;
-      &:nth-child(4n){
-        margin-right: 0;
-      }
-    }
   }
 }
 
