@@ -37,59 +37,58 @@
     <div class="modalContact__modal"></div>
   </article>
 
-    <section class="dropMenu">
-      <div class="dropMenu__wrapper">
-        <section class="topMenu">
-          <section class="dropMenu__header">
-            <div class="dropMenu__burger">
-              <button class="button button--circle button__burgerClose"><img src="" alt=""></button>
-              <img src="img/group.svg" alt="company logo">
-            </div>
-            <div class="dropMenu__search">
-              <button class="button button--circle button__searchGlass"><img src="" alt=""></button>
-            </div>
-          </section>
-
-          <nav class="dropMenu_navigation navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item navigation__item--active"><a>Ремонт техники</a></li>
-              <li class="navigation__item"><a>Услуги и сервисы</a></li>
-              <li class="navigation__item"><a>Корпоративным клиентам</a></li>
-              <li class="navigation__item"><a>Продавцам техники</a></li>
-              <li class="navigation__item"><a>Партнерам</a></li>
-              <li class="navigation__item"><a>Производителям</a></li>
-              <li class="navigation__item"><a>Наши сервисные центры</a></li>
-              <li class="navigation__item"><a>Контакты</a></li>
-            </ul>
-          </nav>
-        </section>
-
-        <section class="bottomMenu">
-          <section class="dropMenu__footer">
-            <article class="dropMenu__info info">
-              <div class="info__services">
-                <button class="button button--circle button__tel"><img src="" alt=""></button>
-                <button class="button button--circle button__chat"><img src="" alt=""></button>
-                <button class="button button--circle button__profile"><img src="" alt=""></button>
-              </div>
-              <div class="info__contacts">
-                <a class="info__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-                <a class="info__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
-              </div>
-              <div class="info__languages">
-                <p class="language language--active">RU</p>
-                <p class="language">EN</p>
-                <p class="language">CH</p>
-              </div>
-            </article>
-          </section>
-        </section>
-      </div>
-      <div class="dropMenu__modal"></div>
-    </section>
-
 
     <div class="wrapper">
+      <section class="dropMenu">
+        <div class="dropMenu__wrapper">
+          <section class="topMenu">
+            <section class="dropMenu__header">
+              <div class="dropMenu__burger">
+                <button class="button button--circle button__burgerClose"><img src="" alt=""></button>
+                <img src="img/group.svg" alt="company logo">
+              </div>
+              <div class="dropMenu__search">
+                <button class="button button--circle button__searchGlass"><img src="" alt=""></button>
+              </div>
+            </section>
+
+            <nav class="dropMenu_navigation navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item navigation__item--active"><a>Ремонт техники</a></li>
+                <li class="navigation__item"><a>Услуги и сервисы</a></li>
+                <li class="navigation__item"><a>Корпоративным клиентам</a></li>
+                <li class="navigation__item"><a>Продавцам техники</a></li>
+                <li class="navigation__item"><a>Партнерам</a></li>
+                <li class="navigation__item"><a>Производителям</a></li>
+                <li class="navigation__item"><a>Наши сервисные центры</a></li>
+                <li class="navigation__item"><a>Контакты</a></li>
+              </ul>
+            </nav>
+          </section>
+
+          <section class="bottomMenu">
+            <section class="dropMenu__footer">
+              <article class="dropMenu__info info">
+                <div class="info__services">
+                  <button class="button button--circle button__tel"><img src="" alt=""></button>
+                  <button class="button button--circle button__chat"><img src="" alt=""></button>
+                  <button class="button button--circle button__profile"><img src="" alt=""></button>
+                </div>
+                <div class="info__contacts">
+                  <a class="info__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                  <a class="info__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
+                </div>
+                <div class="info__languages">
+                  <p class="language language--active">RU</p>
+                  <p class="language">EN</p>
+                  <p class="language">CH</p>
+                </div>
+              </article>
+            </section>
+          </section>
+        </div>
+        <div class="dropMenu__modal"></div>
+      </section>
       <div class="wrapper__item">
         <section class="headerSection">
           <header class="header headerSection__header">
@@ -169,7 +168,7 @@
             <h2 class="title__title">Ремонт техники различных брендов</h2>
           </div>
           <section class="service">
-            <section class="companyList">
+            <section class="companyList companyList__main">
               <div class="swiper">
                 <div class="companyList__list swiper-wrapper">
                   <div class="companyList__wrapper swiper-slide">
@@ -273,7 +272,7 @@
             <h2 class="title__title">Ремонт различных видов техники</h2>
           </div>
           <section class="devices">
-            <section class="companyList">
+            <section class="companyList companyList__main">
               <div class="swiper">
                 <div class="companyList__list swiper-wrapper">
                   <div class="companyList__wrapper swiper-slide">
@@ -376,7 +375,7 @@
             <h2 class="title__title">Ремонт различных видов техники</h2>
           </div>
           <section class="prices">
-            <section class="companyList">
+            <section class="companyList companyList__main">
               <div class="swiper">
                 <div class="companyList__list swiper-wrapper">
                   <div class="companyList__wrapper swiper-slide">
@@ -473,73 +472,75 @@
                 <div class="swiper-pagination"></div>
               </div>
             </section>
-            <table class="prices__table">
-              <thead>
-              <tr>
-                <th>Ремонтные услуги</th>
-                <th>Цена</th>
-                <th>Срок</th>
-                <th></th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>Диагностки</td>
-                <td>Бесплатно</td>
-                <td>30 мин</td>
-                <td>
-                  <button class="button button__order">
-                    Заказать
-                    <a class="prices__arrow" href=""></a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Замена дисплея</td>
-                <td>1 000 ₽к</td>
-                <td>30-120 мин</td>
-                <td>
-                  <button class="button button__order">
-                    Заказать
-                    <a class="prices__arrow" href=""></a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Замена полифонического динамика</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td>
-                  <button class="button button__order">
-                    Заказать
-                    <a class="prices__arrow" href=""></a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Тестирование с выдачей технического заключения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td>
-                  <button class="button button__order">
-                    Заказать
-                    <a class="prices__arrow" href=""></a>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>Замена программного обеспечения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td>
-                  <button class="button button__order">
-                    Заказать
-                    <span class="prices__arrow"></span>
-                  </button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+            <div class="prices__wrapper">
+              <table class="prices__table">
+                <thead>
+                <tr>
+                  <th>Ремонтные услуги</th>
+                  <th>Цена</th>
+                  <th>Срок</th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Диагностки</td>
+                  <td>Бесплатно</td>
+                  <td>30 мин</td>
+                  <td>
+                    <button class="button button__order">
+                      Заказать
+                      <a class="prices__arrow" href=""></a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена дисплея</td>
+                  <td>1 000 ₽к</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="button button__order">
+                      Заказать
+                      <a class="prices__arrow" href=""></a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена полифонического динамика</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="button button__order">
+                      Заказать
+                      <a class="prices__arrow" href=""></a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Тестирование с выдачей технического заключения</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="button button__order">
+                      Заказать
+                      <a class="prices__arrow" href=""></a>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена программного обеспечения</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="button button__order">
+                      Заказать
+                      <span class="prices__arrow"></span>
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
             <section class="prices__info">
               <div class="prices__additional">
                 Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу.
